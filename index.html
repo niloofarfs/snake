@@ -1,0 +1,28 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body onkeydown="keydown()" >
+	<div class="container">
+		<table border="1" id="table">
+		</table>
+	</div>
+	<script type="text/javascript" >
+		var table=document.getElementById("table");
+		var i;
+		var j;
+		var tblContent= "";
+		
+		for(i=0; i<10; i++){
+			tblContent += "<tr>";
+			for(j=0; j<10; j++){
+				tblContent += "<td id='"+ i+ j+ "'></td>";
+			}
+			tblContent += "</tr>";
+		} 
+		
+		table.innerHTML= tblContent;
+	</script>
+	<script type="text/javascript" src="script.js" ></script>
+</body>
+</html>
